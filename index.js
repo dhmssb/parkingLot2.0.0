@@ -4,15 +4,32 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
+const parking = require ('./src/controllers/parking')
+
+
 
 //user Input
 let coba = () => {
-    rl.on('line', async (input) => {
+    rl.on('line', async function (input){
         input = input.split(' ')
         
         switch (input[0]) {
             case ('create_parking_lot'):
+                try{
+                    const result = await parking.createParkinglot(input[1])
+                    console.log(result)
+                }catch(err){
+                    console.log(err)
+                }
 
+            break
+            case('park'):
+
+            break
+            case('leave'):
+
+            break
+            case ('status'):
 
             break
             case ('exit'):
