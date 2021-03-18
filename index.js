@@ -54,6 +54,13 @@ let main = () => {
 
             break
 
+            case('registration_number'):
+                try{
+                    const result = await parking.getSlotFromPlat(input[1].trim())
+                }catch(err){
+                    console.log(err)
+                }
+
             case ('exit'):
                 rl.close()
             break
