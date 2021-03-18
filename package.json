@@ -2,13 +2,18 @@
   "name": "parkingLot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js", 
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhmssb/parkingLot2.0.0"
+  },
   "keywords": [],
-  "author": "Dhimas Sulistyo dhmssb@gmail.com",
+  "author": "dhmssb",
   "license": "ISC",
+  "homepage": "https://github.com/dhmssb/parkingLot2.0.0#run-the-main-program",
   "dependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
