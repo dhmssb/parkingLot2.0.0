@@ -4,7 +4,7 @@ let vehicles = []
 let size = 0
 let slotKosong = []
 
-exports.createParkinglot = async function (lot){
+exports.create = async function (lot){
     try {
         size = parseInt(lot)
     }catch(err) {
@@ -22,16 +22,14 @@ exports.in = async function (plat){
     if (size === 0 ){
         return 'parking lot is not initiated'
     }else if (size === vehicles.length) {
-        return 'Sorry, parking lot full'
+        return 'Sorry, parking lot is full'
     }else {
         let slot = slotKosong[0]
         vehicles.push({
             'slot': slot,
-            'plat': plat
-            
+            'plat': plat   
     })
     slotKosong.shift()
-    
     return `Allocated slot No: ${slot}`
     }
 }
@@ -40,9 +38,9 @@ exports.status = async function (){
     if (size === 0){
         return 'parking lot is not initiated'
     }else if(vehicles.length > 0){
-        console.log('Slot No. \tPlat No.\t Hours')
+        console.log('Slot No. \tPlat No.')
         vehicles.forEach(function(baris){
-            console.log(`${baris.slot}.\t     ${baris.plat}\t   ${baris.hours}`)
+            console.log(`${baris.slot}.\t     ${baris.plat}`)
         })
     }else {
         return 'Parking lot empty'

@@ -11,7 +11,7 @@ exports.remove = async function (slot, prop, carArray) {
     let i = carArray.length
     while(i--){
         if (carArray[i] 
-            && carArray[i].property(prop) 
+            && carArray[i].hasOwnProperty(prop) 
             &&(arguments.length > 2 && carArray[i][prop] === slot)) {
                 carArray.splice(i,1)
             }

@@ -13,7 +13,7 @@ let main = () => {
         switch (input[0]) {
             case ('create_parking_lot'):
                 try{
-                    const result = await parking.createParkinglot(input[1])
+                    const result = await parking.create(input[1])
                     console.log(result)
                 }catch(err){
                     console.log(err)
@@ -23,12 +23,12 @@ let main = () => {
 
             case('park'):
                 try{
-                    const result = await parking.in(input[1].trim(), input[2].trim())
+                    const result = await parking.in(input[1].trim())
                     console.log(result)
                 }catch(err){
                     console.log(err)
                 }
-
+                
             break
 
             case('leave'):

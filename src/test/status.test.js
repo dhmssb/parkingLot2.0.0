@@ -30,7 +30,7 @@ describe('park DL-12-AA-9999', async function (){
 describe('leave 1', async function (){
     it('should free slot no 1', async function (){
         const pre = 'Slot No 1 is free'
-        const result = await parking.in(1)
+        const result = await parking.out(1)
         console.log(result)
         expect(result).to.be.equal(pre)
     })
@@ -39,7 +39,7 @@ describe('leave 1', async function (){
 describe('leave 3', async function (){
     it('should free slot no 3', async function (){
         const pre = 'Slot No 3 is free'
-        const result = await parking.in(3)
+        const result = await parking.out(3)
         console.log(result)
         expect(result).to.be.equal(pre)
     })
@@ -48,7 +48,7 @@ describe('leave 3', async function (){
 describe('leave 2', async function (){
     it('should free slot no 2', async function (){
         const pre = 'Slot No 2 is free'
-        const result = await parking.in(2)
+        const result = await parking.out(2)
         console.log(result)
         expect(result).to.be.equal(pre)
     })
