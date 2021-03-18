@@ -61,6 +61,7 @@ let main = () => {
             case ('exit'):
                 rl.close()
             break
+            
         default:
             console.log('case sensitive')    
         }
