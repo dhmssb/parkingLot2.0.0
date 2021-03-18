@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-      "test": "test"
-  },
   "scripts": {
     "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dhimas Sulistyo dhmssb@gmail.com",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.4",
