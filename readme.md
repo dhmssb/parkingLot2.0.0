@@ -1,2 +1,3 @@
-run the main program
-    node index.js
+## run the main program 
+    node index.js   
+    
