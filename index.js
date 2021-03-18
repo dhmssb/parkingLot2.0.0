@@ -6,9 +6,6 @@ const rl = readline.createInterface({
 
 const parking = require ('./src/controllers/parking')
 
-
-
-//user Input
 let main = () => {
     rl.on('line', async function (input){
         input = input.split(' ')
